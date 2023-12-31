@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatLox
+  name: шапка
+  description:  "вас бросили все и вот у вас шапка..."
+  components:
+  - type: Sprite
+    sprite: _Ck/Clothing/head/lox.rsi
+  - type: Clothing
+    sprite: _Ck/Clothing/head/lox.rsi
+
+# Шапка Деда Мороза
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatDedMorozhat
+  name: Шапка Деда Мороза
+  description: Шапочка Деда Мороза, кажется сзади виднеется веревочка - застежка для бороды...
+  components:
+  - type: Sprite
+    sprite: _Ck/Clothing/head/Moroz_hat.rsi
+  - type: Clothing
+    sprite: _Ck/Clothing/head/Moroz_hat.rsi
