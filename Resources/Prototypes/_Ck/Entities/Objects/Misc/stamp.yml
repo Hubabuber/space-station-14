@@ -1,0 +1,25 @@
+- type: entity
+  name: Печать офицера СССП
+  parent: RubberStampBase
+  id: RubberStampSSSP
+  components:
+  - type: Stamp
+    stampedName: СССП
+    stampedColor: "#999999"
+    stampState: "paper_stamp-warden"
+  - type: Sprite
+    sprite: _Ck/Objects/Misc/bureaucracy.rsi
+    state: stamp-sssp
+
+- type: entity
+  name: Печать шеф-повара
+  parent: RubberStampBase
+  id: RubberStampPOVAR
+  components:
+  - type: Stamp
+    stampedName: шеф-повара
+    stampedColor: "#3f3f3f"
+    stampState: "paper_stamp-ok"
+  - type: Sprite
+    sprite: _Ck/Objects/Misc/bureaucracy.rsi
+    state: stamp-povar

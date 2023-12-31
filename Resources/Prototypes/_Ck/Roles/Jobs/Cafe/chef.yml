@@ -1,0 +1,39 @@
+- type: job
+  id: Chef
+  name: job-name-Chef
+  description: job-description-Chef
+  playTimeTracker: JobChef
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobSuChef
+      time: 7200 #1 hrs 
+    - !type:DepartmentTimeRequirement
+      department: Cafe
+      time: 10860 #3 hrs + 1 min
+  startingGear: ChefGear
+  icon: "JobIconChef"
+  supervisors: job-supervisors-everyone
+  canBeAntag: false
+  access:
+  - Service
+  - Maintenance
+  - Hydroponics
+  - Bar
+  - Kitchen
+
+- type: startingGear
+  id: ChefGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef_ck
+    head: ClothingHeadHatChef_ck
+    back: ClothingBackpackFilled
+    mask: ClothingMaskItalianMoustache
+    shoes: ClothingShoesChef_ck
+    id: PDAChef_
+    ears: ClothingHeadsetService
+    outerClothing: ClothingOuterJacketChef_ck
+    pocket1: EncryptionKeyCommand
+    pocket2: RubberStampPOVAR
+  innerclothingskirt: ClothingUniformJumpskirtChef
+  satchel: ClothingBackpackSatchelFilled
+  duffelbag: ClothingBackpackDuffelFilled
