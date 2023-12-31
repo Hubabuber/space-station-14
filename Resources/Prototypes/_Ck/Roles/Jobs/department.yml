@@ -1,0 +1,11 @@
+- type: department
+  id: Cafe
+  description: department-Cafe-description
+  color: "#bc987e"
+  roles:
+  - Bartender
+  - Botanist
+  - Povar
+  - Chef
+  - ServiceWorker
+  - SuChef
