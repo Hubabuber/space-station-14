@@ -1,0 +1,114 @@
+- type: entity
+  parent: DrinkWaterBottleFull
+  id: DrinkCocoaPowderBottleFull
+  name: пачка какао порошка
+  description: 
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: CocoaPowder
+          Quantity: 100
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/ingredients.rsi
+    layers:
+    - state: cocoaPowder
+
+- type: reagent
+  id: sgushenka
+  name: reagent-name-sgushenka
+  group: Foods
+  desc: reagent-desc-sgushenka
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: vitamin
+  color: white
+  recognizable: true
+
+- type: reaction
+  id: Cookingsgushenka
+  reactants:
+    Milk:
+      amount: 10
+    Sugar:
+      amount: 5
+  products:
+    sgushenka: 10
+
+- type: entity
+  parent: DrinkWaterBottleFull
+  id: DrinkSgushenkaBottleFull
+  name: сгущеночка
+  description: та самая сгущёнка из вашего детства! единственная причина что бы слетать на планету СССП
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: sgushenka
+          Quantity: 100
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/ingredients.rsi
+    layers:
+    - state: sgushenka
+
+- type: reagent
+  id: classicSauce1
+  name: reagent-name-classicSauce
+  group: Foods
+  desc: reagent-desc-classicSauce
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: salty
+  color: white
+  recognizable: true
+
+- type: reaction
+  id: CookingClassicSauce1
+  reactants:
+    Milk:
+      amount: 5
+    Mayo:
+      amount: 5
+    Blackpepper:
+      amount: 1
+    TableSalt:
+      amount: 1
+  products:
+    classicSauce1: 17
+
+- type: entity
+  parent: DrinkWaterBottleFull
+  id: DrinkUniversalSauceBottleFull
+  name: майонезный соус
+  description: майонезный соус
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: classicSauce1
+          Quantity: 100
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/ingredients.rsi
+    layers:
+    - state: sauce
+
+- type: reagent
+  id: jamApple
+  name: reagent-name-jamApple
+  group: Foods
+  desc: reagent-desc-jamApple
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: vitamin
+  color: orange
+  recognizable: true
+
+- type: reaction
+  id: CookingjamApple
+  reactants:
+    JuiceApple:
+      amount: 5
+    Sugar: 
+      amount: 3
+  products:
+    jamApple: 7

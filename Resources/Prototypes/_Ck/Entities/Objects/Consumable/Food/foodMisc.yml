@@ -1,0 +1,71 @@
+- type: entity
+  name: Манка
+  parent: FoodBowlBase
+  id: FoodBakedSemolina
+  description: Манная Каша.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - magical
+      - funny
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/Baked/Misc.rsi
+    layers:
+    - state: bowl
+    - state: semolina
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxvol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 16
+        - ReagentId: Vitamin
+          Quantity: 6
+        - ReagentId: DoctorsDelight
+          Quantity: 10
+
+- type: entity
+  name: котлеты
+  parent: FoodBakedMediumBase
+  id: FoodCutlet
+  description: котлеты, из мяса.
+  components:
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/Baked/Misc.rsi
+    state: cutlet
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - magical
+      - funny
+
+- type: entity
+  name: пончики по Московски
+  parent: FoodBakedMediumBase
+  id: FoodMoscowPies
+  description: Кухня Великого города, родина мать приготовила!
+  components:
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/Baked/Misc.rsi
+    state: MoscowPies
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - magical
+      - funny
+      
+- type: entity
+  name: Шоколадный эклер
+  parent: FoodBakedMediumBase
+  id: FoodBakedEclairsChocolate
+  description: шоколадное.
+  components:
+  - type: Sprite
+    sprite: _Ck/Objects/Consumable/Food/Baked/Misc.rsi
+    state: eclairsChocolate
+  - type: FlavorProfile
+    flavors:
+      - magical
+      - funny

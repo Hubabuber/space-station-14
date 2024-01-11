@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "from the Honker team",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "bowl"
+        },
+        {
+            "name": "bogaturskaia"
+        },
+        {
+            "name": "chees"
+        },
+        {
+            "name": "classic"
+        },
+        {
+            "name": "gribnoi"
+        },
+        {
+            "name": "meat"
+        },
+        {
+            "name": "ostraia"
+        },
+        {
+            "name": "chuck-chuck"
+        },
+        {
+            "name": "curry"
+        },
+        {
+            "name": "plow"
+        },
+        {
+            "name": "shurpa"
+        },
+        {
+            "name": "chebureks"
+        },
+        {
+            "name": "mantas"
+        },
+        {
+            "name": "samsa"
+        },
+        {
+            "name": "KharaPera"
+        }
+    ]
+}
